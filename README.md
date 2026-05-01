@@ -42,7 +42,7 @@ The environment consists of an attacker system, a target host, and a centralized
 
 
 
-![Architecture](screenshots/1-architecture.png)
+![Architecture](screenshots/screenshots1-architecture.png)
 
 
 
