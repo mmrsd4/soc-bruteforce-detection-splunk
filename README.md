@@ -42,7 +42,7 @@ The environment consists of an attacker system, a target host, and a centralized
 
 
 
-\[Architecture](screenshots/-architecture.png)
+![Architecture](screenshots/1-architecture.png)
 
 
 
@@ -144,7 +144,7 @@ hydra -l root -P rockyou.txt ssh://192.168.157.134
 
 
 
-\[Hydra Attack](screenshots/2-hydra-attack.png)
+![Hydra Attack](screenshots/2-hydra-attack.png)
 
 
 
@@ -178,7 +178,7 @@ Key indicators observed:
 
 
 
-\[Auth Log](screenshots/3-auth-log.png)
+![Auth Log](screenshots/3-auth-log.png)
 
 
 
@@ -206,9 +206,9 @@ Configured monitoring for:
 
 
 
-\[Splunk Data Input](screenshots/4-splunk-data-input-1.png)
+![Splunk Data Input](screenshots/4-splunk-data-input-1.png)
 
-\[Splunk Data Input](screenshots/4-splunk-data-input-2.png)
+![Splunk Data Input](screenshots/4-splunk-data-input-2.png)
 
 
 
@@ -244,7 +244,7 @@ index=linux\_logs sourcetype=auth\_log "Failed password"
 
 
 
-\[Splunk Search](screenshots/5-splunk-search.png)
+![Splunk Search](screenshots/5-splunk-search.png)
 
 
 
@@ -274,7 +274,7 @@ This ensures timely detection while reducing alert noise.
 
 
 
-\[Alert](screenshots/7-alert.png)
+![Alert](screenshots/7-alert.png)
 
 
 
@@ -296,7 +296,7 @@ A Splunk dashboard was developed to provide real-time visibility into attack pat
 
 
 
-\[Dashboard](screenshots/6-dashboard.png)
+![Dashboard](screenshots/6-dashboard.png)
 
 
 
