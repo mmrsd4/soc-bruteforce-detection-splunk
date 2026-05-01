@@ -1,0 +1,21 @@
+# Detect failed SSH login attempts
+index=* sourcetype=auth "Failed password"
+| stats count by src_ip, user
+| sort - count
+
+# Detect brute force attack (threshold-based)
+index=* sourcetype=auth "Failed password"
+| stats count by src_ip
+| where count > 10
+| sort - count
+
+# Time-based brute force detection (more realistic)
+index=* sourcetype=auth "Failed password"
+| bin _time span=5m
+| stats count by _time, src_ip
+| where count > 5
+
+# Detect multiple usernames targeted by same IP
+index=* sourcetype=auth "Failed password"
+| stats dc(user) as unique_users count by src_ip
+| where unique_users > 3
