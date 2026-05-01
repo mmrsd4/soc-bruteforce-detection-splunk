@@ -86,9 +86,6 @@ Alerts + Dashboards + Incident Visibility
 
 
 
-&#x20;Component                  | Role
-
-&#x20;-------------------------- | -------------------------
 
 &#x20;Kali Linux                 | Attack simulation
 
