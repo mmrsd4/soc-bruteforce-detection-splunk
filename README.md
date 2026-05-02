@@ -383,9 +383,7 @@ SOC-BruteForce-Detection/
 
 
 
-| Technique   | ID    | Description                                           |
-
-| ----------- | ----- | ----------------------------------------------------- |
+| Technique   | ID    | description 
 
 | Brute Force | T1110 | Adversaries attempt to guess passwords to gain access |
 
